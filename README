@@ -1,0 +1,17 @@
+<h3>Hammer</h3>
+<p>
+    Hammer is built on two classes: Hammer and Swing.
+</p>
+<p>
+    A Swing is just a thread that uses mechanize to open a connection to the URL passed in its constructor.
+    The Hammer spawns concurrent Swings.    
+</p>    
+<p>    
+    Use it like this:
+</p>
+<p>
+    <em>
+        my_url = "http://nin.ja/urlThing"<br />
+        Hammer(url=my_url, num_swings=100).run()
+    </em>
+</p>

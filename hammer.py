@@ -36,5 +36,8 @@ class Hammer(object):
         for i in range(self.num_swings):
             Swing(self.url).start()
     
-
-Hammer(url="http://kyle.tbxing.com/frontend_dev.php/test/index", num_swings=20).run()
+    
+    
+# If you like, you can uncomment the next two lines and invoke Hammer within this file:
+# my_url = "http://nin.ja/urlThing"
+# Hammer(url=my_url, num_swings=100).run()
