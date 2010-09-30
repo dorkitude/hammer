@@ -8,7 +8,7 @@ What hammer is
 
 
 Use it like this
-        my_url = "http://nin.ja/urlThing"<br />
+        my_url = "http://nin.ja/urlThing"
         Hammer(url=my_url, num_swings=100).run()
 
 
