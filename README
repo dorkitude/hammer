@@ -1,9 +1,23 @@
-Hammer
+Hammer!!!
 
-Hammer is built on two classes: *Hammer* and *Swing*
-A Swing is just a thread that uses mechanize to open a connection to the URL passed in its constructor.
-The Hammer spawns concurrent Swings.    
 
-Use it like this:
+
+
+What hammer is
+    Hammer calls a URL many times concurrently, which is very useful for rudimentary load testing :)
+
+
+Use it like this
         my_url = "http://nin.ja/urlThing"<br />
         Hammer(url=my_url, num_swings=100).run()
+
+
+How it works
+    Hammer is built on two classes: *Hammer* and *Swing*, and it submodules mechanize.
+
+    *Swing*
+        is just a thread that uses mechanize to open a connection to the URL passed in its constructor
+    *Hammer*
+        spawns and starts concurrent Swings
+    *mechanize*
+        currently, I fork from jjlee @ http://github.com/jjlee/mechanize
