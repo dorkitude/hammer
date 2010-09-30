@@ -38,5 +38,5 @@ class Swing(threading.Thread):
     
     
 # If you like, you can uncomment the next two lines and invoke Hammer within this file:
-my_url = "http://kyle.tbxing.com/frontend_dev.php/test/index"
-Hammer(url=my_url, num_swings=100).run()
+# my_url = "http://your.page.url/page"
+# Hammer(url=my_url, num_swings=10).run()
