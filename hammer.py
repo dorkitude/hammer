@@ -31,12 +31,12 @@ class Swing(threading.Thread):
         response = browser.open(self.url).get_data()
         finish_time = datetime.datetime.now()
         timedelta = (finish_time - start_time)
-        response_ms = timedelta.microseconds/1000
-        logging.debug("%s - %s" % (start_time, response_ms))
-
+        response_seconds = str(timedelta)
+        logging.debug("%s - %s = %s" % (start_time, finish_time, response_seconds))
+        logging.debug(response)
 
     
     
 # If you like, you can uncomment the next two lines and invoke Hammer within this file:
-# my_url = "http://your.page.url/page"
+# my_url="http://my.site.domain/page"
 # Hammer(url=my_url, num_swings=10).run()
