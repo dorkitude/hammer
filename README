@@ -9,9 +9,10 @@ What hammer is
     Hammer calls a URL many times concurrently, which is very useful for rudimentary load testing :)
 
 
-Use it like this
+Use it like this (the easiest way is to edit and run run.py)
         my_url = "http://nin.ja/urlThing"
         Hammer(url=my_url, num_swings=100).run()
+
 
 
 How it works
